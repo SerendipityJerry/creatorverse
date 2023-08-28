@@ -29,11 +29,10 @@ function ShowCreators({ creators }) {
 ShowCreators.propTypes = {
     creators: PropTypes.arrayOf(
         PropTypes.shape({
-            id: PropTypes.number.isRequired,  // Updated to number since your IDs are numbers
+            id: PropTypes.number.isRequired,
             name: PropTypes.string.isRequired,
             url: PropTypes.string.isRequired,
             description: PropTypes.string.isRequired,
-            // Add other properties as needed
         })
     ).isRequired,
 };
